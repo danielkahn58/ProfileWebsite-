@@ -1,0 +1,26 @@
+body {
+    font-family:'Franklin Gothic Medium';
+    font-weight:bold;
+    background-color:lightblue;
+}
+
+h1 {
+    font-size:50pt;
+}
+
+h1,h2,h3 {
+    text-align:center;
+}
+
+#Header {
+    background-color:yellow;
+    font-style:italic;
+}
+
+#FirstHeading {
+    color:red;
+}
+
+.BlueText {
+    color:blue;
+}

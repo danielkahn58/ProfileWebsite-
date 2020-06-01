@@ -1,0 +1,345 @@
+<html>
+    <head>
+        <title>My Personal Website</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+
+
+        <!-- user agent styles??? -->
+        <!-- div structure bg colors -->
+        <style>
+            body { 
+                margin:0px;
+                font-family:Roboto,sans-serif;
+            }
+            p {
+                font-weight: 300;
+                font-size: 18px;
+                line-height:1.5em;
+            }
+            h2 {
+                font-weight: 500;
+                font-size: 49px;
+                
+            }
+            h4 {
+                font-weight: 500;
+                font-size: 27px;
+                color: #696969;
+            }
+            .centered {
+                text-align:center;
+            }
+            .button {
+                width:290px;
+                font-weight: 400;
+                font-size: 20px;
+                letter-spacing: -0.4px;
+                border: 1px solid #f3f3f3;
+                padding:25px;
+            }
+            a {
+                color:inherit;
+                text-decoration:none;
+            }
+            .section {
+                padding:50px 50px 0px 0px;
+            }
+            .grayBG {
+                
+                background-color: #f2f2f2;
+            }
+                /* Columns */
+                .half-column {
+                width:45%;
+                padding:15px;
+                float:left;
+            }
+            .third-column {
+
+                width:30%;
+                padding:15px;
+                float:left;
+            }
+            .section {
+                padding:20px;
+            }
+            /* nav */
+            #nav {
+                background-color: #2d2b2a;
+                height:50px;
+                width:100%;
+                position:fixed;
+                text-align:center;
+            }
+            #nav ul {
+                margin:0px;
+            }
+            #nav ul li {
+                list-style: none;
+                display:inline-block;
+                color:#b5b5b5;
+                padding:15px;
+            }
+
+            /* hero */
+            #hero {
+               background-image:url("Images/teaching.jpg");
+               height:480px;
+               background-size:cover;
+               background-repeat: no-repeat;
+               color:white;
+               padding-top:100px;
+               padding-left:200px;
+            }
+            #hero h1 {
+                font-size:65px;
+                font-weight:500px;
+            }
+            #hero h3 {
+                font-size:27px;
+                font-weight: 300;
+                letter-spacing: -0.2px;
+            }
+            /* services */
+            #services {
+                height:400px;
+
+            }
+       
+             /* bio */
+            #bio {
+                background-color:white; 
+                height:500px;
+            }
+            #bio::after {
+                clear:both
+            }
+
+            #skills {
+                height:500px;
+            }
+            #skills ul li {
+                list-style:none;
+                text-align:center;
+                font-weight:300;
+                line-height:1.5;
+            }
+            #contact {
+                height:500px;
+            }
+             /* portfolio */
+             #portfolio {
+                 clear:both;
+                 height:300px;
+             }   
+             #portfolio img {
+                 width:200px;
+                 float:left;
+                 margin: 15px;
+             }
+            /* testimonials */
+            #testimonials{ 
+                height:600px;
+            }
+            #testimonials .testimonial {
+                 text-align:center;
+             }
+             #testimonials .testimonial img {
+                border-radius:100%;
+             }
+
+             #popup {
+                 width:500px;
+                 height:400px;
+                 position:fixed;
+                 top:100px;
+                 left:30%;
+                 z-index:1000;
+                 border:2px solid black;
+                 background-color:white;
+                 margin:0 auto;
+                 text-align:center;
+                 display:none;
+             }
+        </style>
+
+    
+    </head>
+
+    <body>
+        <div id="nav">
+            <ul>
+                <li>Home</li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#bio">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div id="hero">
+            
+            <div id="content">
+                <h1>I'm Dan.</h1>
+
+                <h3>I help small businesses
+                    establish a web presence.</h3>
+
+                <input type="button" value="Schedule Consultation"
+                    class="button"/>
+            </div>
+       </div>
+
+        <div id="services" class="section grayBG">
+            <h2 class="centered">Services</h2>
+
+            <div class="third-column">
+                <h4 class="centered">WordPress Setup</h4>
+                <p>I will configure your WordPress website or give you a tutorial so you can DIY.</p>
+            </div>
+
+            <div class="third-column">
+                <h4 class="centered">Web Design</h4>
+                <p>I will provide you with a top-notch customized design, tailed to your business goals.</p>
+            </div>
+
+            <div class="third-column">
+                <h4 class="centered">Web Solutions</h4>
+                <p>I offer custom development in PHP, ASP.NET,
+                    and React for web and mobile applications.</p>
+            </div>
+    
+        </div>
+
+        <div id="bio" class="section">
+            <div class="half-column">
+                <img width="500" src="http://codestartacademy.com/wp-content/uploads/bb-plugin/cache/startup-photos-portrait.jpg"/>
+            </div>
+
+            <div class="half-column">
+                <h2>Let me help
+                    your web presence.</h2>
+
+                <p>Whether you’re a photographer looking for a portfolio site, a clothing vendor who wants to sell your product online, or a blogger trying to pick up more web traffic, you shouldn’t have to hire expensive developers to establish a web presence.</p>
+
+                <p>For many businesses it is possible to use pre-exisiting tools and templates to get the website you want, without any coding. In addition to standard website setup, I can help you with a digital strategy to attract organic viewers to your site and convert them into paying customers.</p>
+                    
+                <p>If your vision does require more custom development, I provide training for HTML, CSS, and JavaScript so that you can build and/or make changes to your website yourself. I can also my offer my own expertise as a developer.</p>
+            </div>
+      
+        </div>
+
+        <div id="portfolio" class="section">
+            <h2 class="centered">Portfolio</h2>
+            
+            
+            <img src="http://codestartacademy.com/wp-content/uploads/2020/04/experience-3.jpg">
+            <img src="http://codestartacademy.com/wp-content/uploads/2020/04/experience-3.jpg">
+            <img src="http://codestartacademy.com/wp-content/uploads/2020/04/experience-3.jpg">
+            <img src="http://codestartacademy.com/wp-content/uploads/2020/04/experience-3.jpg">
+        </div>
+
+        <div id="skills" class="section grayBG">
+            <h2  class="centered">I can help with...</h2>
+
+            <ul>
+                <div class="third-column">
+                    <li>WordPress</li>
+                    <li>Web hosting</li>
+                    <li>Responsive websites</li>
+                    <li>Blogging</li>
+                </div>
+                <div class="third-column">
+
+                    <li>Portfolio sites</li>
+                    <li>Website analytics</li>
+                    <li>Search Engine Optimization</li>
+                    <li>Online booking solutions</li>
+                </div>
+                <div class="third-column">
+                    <li>Custom web design</li>
+                    <li>ASP.NET</li>
+                    <li>React</li>
+                </div>
+            </ul>
+
+        </div>
+
+
+        <div id="contact" class="section">
+            <div class="half-column">
+                <h2>Let's talk.</h2>
+                <p>You shouldn’t have to spend a fortune to establish a web presence. If you have a small business or brand and need a website or redesign of existing website, let's go over the best tools and options to get there.</p>
+
+                <input type="button" class="Button" value="Schedule Consultation">
+            </div>
+            <div class="half-column">
+                <img width="500" src="http://codestartacademy.com/wp-content/uploads/bb-plugin/cache/student-square.png"/>
+         
+            </div>
+           
+        </div>
+
+        <div id="testimonials" class="section grayBG">
+            <h2 class="centered">Testimonials</h2>
+
+            <div class="testimonial third-column">
+                <img src="http://codestartacademy.com/wp-content/uploads/bb-plugin/cache/xxx-150x150-circle.jpg">
+                <h4>Janice</h4>
+                <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</blockquote>
+            </div>
+            
+            <div class="testimonial third-column">
+                <img src="http://codestartacademy.com/wp-content/uploads/bb-plugin/cache/xxx-150x150-circle.jpg">
+                <h4>Janice</h4>
+                <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</blockquote>
+            </div>
+            
+            <div class="testimonial third-column">
+                <img src="http://codestartacademy.com/wp-content/uploads/bb-plugin/cache/xxx-150x150-circle.jpg">
+                <h4>Janice</h4>
+                <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</blockquote>
+            </div>
+            
+        </div>
+
+        <div id="footer">
+            <h4>dsfadsf</h4>
+            <p>adsfafdads</p>
+        </div>
+        <div id="popup">
+            <form action="https://mailthis.to/danielkahn58" 
+                method="POST"> 
+                <input type="text" name="name" placeholder="Your name"> 
+                <input type="email" name="_replyto" placeholder="Your email"> 
+                <input id="date" type="text">
+                <input type="submit" id="submit" value="Send"> 
+            </form> 
+        </div>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <script type="text/javascript" >
+
+            document.getElementsByClassName("button")[0].onclick = function() {
+
+                if (document.getElementById("popup").style.display == "block") {
+                    document.getElementById("popup").style.display = "none";
+                }
+                else {
+                    document.getElementById("popup").style.display = "block";
+                }
+            }
+            
+            $("#date").datepicker();
+
+            document.getElementById("submit").onclick = function() {
+
+
+            }
+        </script>
+    </body>
+</html>
